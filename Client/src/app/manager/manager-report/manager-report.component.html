@@ -1,0 +1,7 @@
+<h1>Manager Report</h1>
+<div>{{message}}</div>
+<button type="button" class="btn btn-primary" onClick="history.back()">Back</button>
+<div>Total Hours: {{totalHours}}</div>
+<app-pagination (pagingEvent)="getMonthlyReport($event)"></app-pagination>
+<app-table-manager-report [tableRows]="tableRows" [keys]="keys"></app-table-manager-report>
+<app-heat-map></app-heat-map>

@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">EmployeeName</th>
+            <th scope="col">TotalHours</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let key of keys">
+        <tr>
+            <td>{{key}}</td>
+            <td>{{tableRows[key]}}</td>
+        </tr>
+    </tbody>
+</table>

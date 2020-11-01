@@ -1,0 +1,15 @@
+<div>
+    <h1>Monthly Report</h1>
+    <div></div>
+    <app-pagination (pagingEvent)="getMonthlyReport($event)"></app-pagination>
+    <button type="button" class="btn btn-primary" onClick="history.back()">Back</button>
+</div>
+
+<div>Total Hours:{{totalHours}}</div>
+<div id="table">
+    {{stringForNonExistData}}
+    <app-table-month-report [tableRows]="tableRows"></app-table-month-report>
+</div>
+<div id="heatMap">
+    <app-heat-map></app-heat-map>
+</div>

@@ -1,0 +1,15 @@
+<h1>Control Panel</h1>
+<div>{{msg}}</div>
+<button type="button" class="btn btn-primary" (click)="clockIn()">Clock In</button>
+<button type="button" class="btn btn-primary" (click)="clockOut()">Clock Out</button>
+
+<div class="form-group">
+    <label for="exampleInputPassword1">Comment *only for clock out</label>
+    <input type="text" minlength="8" [(ngModel)]="comment" required class="form-control" id="exampleInputPassword1"
+        placeholder="Comment">
+</div>
+<app-display-map></app-display-map>
+
+
+<button type="button" class="btn btn-primary" (click)="logOut()">Log Out</button>
+<button type="button" class="btn btn-primary" (click)="navToReport()">Report</button>

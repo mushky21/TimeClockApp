@@ -1,0 +1,15 @@
+swagger: "2.0"
+info: 
+  description: API for Hour Reporting System
+  version: "0.1.0"
+  title: Node Rest API documentation
+  termsOfService: "http://swagger.io/terms/"
+  license:
+    name: Apache 2.0
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: localhost:3000
+basePath: /
+schemes:
+  - http
+
+

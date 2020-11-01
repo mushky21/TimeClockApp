@@ -1,0 +1,40 @@
+<h1>Sign Up</h1>>
+<div>{{error}}</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">First Name</span>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="user.firstName" placeholder="first name"  aria-label="firstName" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Last Name</span>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="user.lastName" placeholder="last name" aria-label="lastName" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Password</span>
+  </div>
+  <input type="password" class="form-control" [(ngModel)]="user.password" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Confirmed Password</span>
+  </div>
+  <input type="password" class="form-control"  [(ngModel)]="confirmedPassword" placeholder="confirm your password" aria-label="Confirmed Password" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Phone</span>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="user.phone" placeholder="phone" aria-label="Phone" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Email</span>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="user.mail" placeholder="email" aria-label="Email" aria-describedby="basic-addon1">
+</div>
+<button type="button" class="btn btn-primary" (click)="signUp()">Sign Up</button>
+<button type="button" class="btn btn-primary" (click)="back()">Back</button>

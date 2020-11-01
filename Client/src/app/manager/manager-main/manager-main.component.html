@@ -1,0 +1,11 @@
+<h1>Manager Screen</h1>
+<div>{{msg}}</div>
+<input type="text" minlength="8" [(ngModel)]="firstName" placeholder="First Name">
+<input type="text" minlength="8" [(ngModel)]="lastName" placeholder="Last Name">
+<button type="button" class="btn btn-primary" (click)="employeeReport()">Employee Report</button>
+<div>
+    <button type="button" class="btn btn-primary" (click)="managerReport()">Manager Report</button>
+</div>
+<div>
+    <button type="button" class="btn btn-primary" onClick="history.back()">Back</button>
+</div>

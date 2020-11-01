@@ -1,0 +1,13 @@
+input{
+    width: 200px;
+}
+
+button,div{
+    margin: 15px;
+}
+
+
+mgl-map {
+    height: 50%;
+    width: 100%;
+  }
